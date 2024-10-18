@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const PostSchema = new mongoose.Schema(
+const Post1Schema = new mongoose.Schema(
   {
     posterId: {
       type: String,
@@ -9,17 +9,12 @@ const PostSchema = new mongoose.Schema(
     message: {
       type: String,
       trim: true,
-      maxlength: 500,
+      maxlength: 1000,
     },
-    picture: {
-      type: String,
-    },
-    video: {
-      type: String,
-    },
+
     likers: {
       type: [String],
-      required: true,
+      default: [],
     },
     comments: {
       type: [
@@ -30,7 +25,7 @@ const PostSchema = new mongoose.Schema(
           timestamp: Number,
         }
       ],
-      required: true,
+      default: [],
     },
   },
   {
@@ -38,4 +33,4 @@ const PostSchema = new mongoose.Schema(
   }
 );
 
-module.exports = mongoose.model('post', PostSchema);
+module.exports = mongoose.model('post1', Post1Schema);
