@@ -13,6 +13,7 @@ body {
     height: 100vh;
     line-height: 0.8;
     background: #FFD5D6;
+    overflow: hidden;
     
     
 }
@@ -24,6 +25,7 @@ h1{
 
 .wrapper{
     background-color: #FFBCBE;
+    position: absolute;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     padding: 20px;
@@ -67,7 +69,14 @@ input {
     padding: 10px;
     border: 1px solid white;
     border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0 0 10px rgba(255, 146, 148, 0.8);
+    animation: glowing 1.5s infinite alternate;
 
+}
+.btn:hover{
+    transform: translateY(-4px);
 }
 .input-box{
     margin-bottom: 0px;
@@ -94,4 +103,20 @@ font-size: x-small;
 ::-webkit-input-placeholder{
     color: white;
     
+}
+.fa-eye{
+    position:absolute;
+    top: 68%;
+    right: 8%;
+    cursor: pointer;
+    color: white;
+
+}
+.fa-eye-slash{
+    position:absolute;
+    top: 68%;
+    right: 8%;
+    cursor: pointer;
+    color: white;
+
 }

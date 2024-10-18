@@ -3,41 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign up</title>
+    <title>Log in</title>
     <link rel="stylesheet" href="../styles/page2.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
     <div class="wrapper"> 
         
         <h1>Log in</h1>
 
-        <form action="">   
-        <div class="input-box">
-            <label for="name">name</label><br>
-            <input type="text" name="name" id="name" placeholder="enter your name...">
-        </div>
+        <form action="/login">   
+        
         <div class="input-box">
             <label for="username">username</label><br>
-            <input type="text" name="username" id="username" placeholder="enter a username...">
+            <input type="username" name="username" id="username" placeholder="enter a username or email...">
         </div>
-        <div class="input-box">
-            <label for="email">email</label><br>
-            <input type="text" name="email" id="email" placeholder="enter your email...">
-        </div>
+        
         <div class="input-box">
             <label for="password">password</label><br>
-            <input type="text" name="password" id="password" placeholder="enter your password...">
+            <input type="password" name="password" id="password" placeholder="enter your password...">
+            <i class="fa-solid fa-eye" id="show-password"></i>
+           
             
         </div>
-        <button type="submit" class="btn"> Sign up</button>
+        
         <div class="login-link"> 
-            <label class="login-label"> Already have an account?<a href="#" class="sign-in-link"> Sign in.</a></label>
+            <label class="login-label"> <a href="#" class="password-retrieve"> Forgot password?</a>Please try again or request a new one.</label>
+            
+        </div>
+        <button type="submit" class="btn"> Log in</button>
+        <div class="sign-up-link"> 
+            <label class="login-label"> New user?<a href="page1.html" class="sign-up-link"> Sign up.</a></label>
             
         </div>
         
         
     </form>
     </div>
+    <script src="../scripts/passwordtoggle.js"> </script>
 </body>
 </html>
