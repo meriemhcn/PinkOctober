@@ -9,7 +9,7 @@ const CentreModel=require("../dataBase/modles/Centre.js");
 const DictioModel=require("../dataBase/modles/Dictionnaire.js");
 const authenticate = require("../middleware/authM.js");
 
-router.post("/sign",async function(req,res){
+router.post("/signup",async function(req,res){
 const pseudo=req.body.pseudo;
 const email=req.body.email;
 const password=req.body.password;
