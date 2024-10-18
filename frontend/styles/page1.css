@@ -14,6 +14,8 @@ body {
     line-height: 0.8;
     background: #FFD5D6;
     overflow: hidden;
+   
+    
     
     
 }
@@ -33,6 +35,7 @@ h1{
     width: 400px;
     height: 400px;
     text-align: center;
+    align-items: flex-end;
     
 
 }
@@ -119,4 +122,14 @@ font-size: x-small;
     cursor: pointer;
     color: white;
 
+}
+.pic{
+   
+    position: absolute;
+    vertical-align: bottom;
+    left: 1000px;
+    padding: 0%;
+    margin: 0%;
+    bottom: 0%;
+    
 }
