@@ -28,14 +28,14 @@ const Post2Schema = new mongoose.Schema(
       default: [],
     },
     linkUrl: {
-        type: String, // Utilise String pour stocker un lien URL
+        type: String, 
         validate: {
           validator: function(v) {
-            return /^(ftp|http|https):\/\/[^ "]+$/.test(v); // Validation de l'URL
+            return /^(ftp|http|https):\/\/[^ "]+$/.test(v); 
           },
           message: props => `${props.value} n'est pas un URL valide !`
         },
-        required: false // Pas obligatoire, à toi de décider si tu le rends obligatoire
+        required: false 
       }
   },
   {

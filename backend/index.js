@@ -22,9 +22,8 @@ const corsOptions = {
   app.use(cors(corsOptions));
 app.use(cookieParser());
 
-app.use("/register",require("./routes/Route2.js"));
+app.use("/user",require("./routes/Route2.js"));
 app.use(Erreurhandler);
-
 
 app.get("/verify",function(req,res){
     const token=req.query.token;
