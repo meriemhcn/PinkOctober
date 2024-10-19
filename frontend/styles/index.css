@@ -190,8 +190,25 @@ button:hover{
     align-items: center;
     letter-spacing: 0.5px;
     font-size: 10px;
+   
 }
 
+.articles:hover{
+  transform: translateY(-4px); 
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+.forum:hover{
+  transform:translateY(-4px); 
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+.glossary:hover{
+  transform: translateY(-4px); 
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+.test:hover{
+  transform: translateY(-4px); 
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
 .t{
   display:flex;
   justify-content: center;
