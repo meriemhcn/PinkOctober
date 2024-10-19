@@ -29,7 +29,7 @@ body {
     align-items: center;
     padding: 30px 20px; 
     width: 30px; 
-    background-color: #f9a3a5; 
+    background-color: #FFD5D6; 
     margin-right: 40px; 
     color: rgb(249, 160, 160); 
     border-radius: 10px;
@@ -42,6 +42,7 @@ body {
 
 .icons{
     margin-bottom: 10px;
+    ;
 }
 
 .sidelabel{
@@ -74,15 +75,7 @@ Chat Interface CSS
     background-color: #ffecef;
 }
 
-.menu-bar {
-    width: 80px;
-    background-color: white;
-    padding: 20px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
-}
+
 
 .icons {
     cursor: pointer;
@@ -92,6 +85,7 @@ Chat Interface CSS
 .icons:hover {
     transform: scale(1.1);
 }
+
 
 .twoicons {
     margin-top: auto;
