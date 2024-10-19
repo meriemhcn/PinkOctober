@@ -20,9 +20,7 @@
     height: 80vh;
       
   }
-  .twoicons{
-    margin-top:180px ;
-  }
+  
   .menu-bar {
     display: flex;
     flex-direction: column;
@@ -42,6 +40,15 @@
   .icons{
     margin-bottom: 10px;
   }
+  .icons {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.icons:hover {
+    transform: scale(1.1);
+}
+
 .search-container {
     display:flex;
     justify-content:center;

@@ -45,6 +45,15 @@
   .icons{
     margin-bottom: 10px;
   }
+  .icons {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.icons:hover {
+    transform: scale(1.1);
+}
+
 
 #footer{
     background-color: #ffd5d6;
