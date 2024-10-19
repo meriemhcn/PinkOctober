@@ -3,14 +3,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 html,body{
+    z-index: 1;
     background-color: #FFD5D6;
-    background-image: url(../images/Forme1.png);
     height: 100%;
     font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
-body{
+/************************************************** HOME*********************************************************/
+.vip{
+    background-image: url(../images/Forme1.png);
     margin:0;
     padding:0;
     height: 100%;
@@ -21,6 +23,7 @@ article{
     display:flex;
     justify-content: space-between;
     align-items: center;
+    flex-shrink:1; 
 }
 .bloc1{
     margin-top:60px;
@@ -36,7 +39,8 @@ article{
     max-width: 700px;
     bottom: 0px; 
     right: 0px; 
-    width: 100%; 
+    width: 100%;
+    
     }
 h1{
     color:#A15C92;
@@ -50,9 +54,8 @@ h1{
     margin-top: 0;
     font-size: 35px;
     color: #FEFEFE;
-    justify-self: center;
-
 }
+
 button{
     margin-top: 40px;
     width: 150px;
@@ -64,13 +67,13 @@ button{
     font-weight: 700;
     color:#FFFFFF;
     font-size:larger;
+    cursor: pointer;
+    background-color: #FF9294;
 }
-#Login{
-   background-color: #FF9294;
-}
-#Register{
-   background-color: #FCBABC;
-   
+
+button:hover{
+  box-shadow: 0 0 30px rgba(255, 111, 114, 0.8);
+  background-color:#FCBABC;
 }
 .bouton {
     display:flex;
@@ -79,6 +82,140 @@ button{
     width: 100%;
     gap: 30px;
 }
+/************************************************* Features *********************************************************/
+.sec1{
+  height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.sec1 p{
+  color:#FEFEFE;
+}
+#p1{
+  font-family: "popping",bold;
+  font-weight: 700;
+  font-size: 50px;
+  margin-top:30px;
+  margin-bottom: 60px;
+}
+#p2{
+  font-size: 30px;
+  line-height: 42px;
+  text-align: center;
+}
+.rectangle{
+  padding: 100px;
+  height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+#grandrec{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #FF9294;
+  width: 1000px;
+  height: 180px;
+  margin:0 auto;
+  border-radius: 25px;
+
+}
+.sec2{
+  margin:0;
+  padding: 0;
+  height: 100vh;
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.text2{
+  margin: 0;
+  padding: 0;
+  display:block;
+  gap:-90px;
+}
+#p21{
+  padding: 0;
+  font-family: "popping",bold;
+  font-weight: 700;
+  font-size: 50px;
+  margin:0px;
+  color:#FEFEFE;
+  text-align: center;
+
+}
+#p22{
+  font-size: 30px;
+  color:#FEFEFE;
+  text-align: center;
+
+}
+.rec4{
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap:40px;
+
+}
+.rec4 > div{
+  background-image: linear-gradient(to bottom,#FEA4A5,#FFBABC);
+  width: 550px;        
+  height: 200px;  
+  display: flex;      
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 40px;
+}
+.test,.glossary,.forum,.articles {
+  padding: 10px;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.5px;
+    font-size: 10px;
+}
+
+.t{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "pappins",sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+.sd{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap:30px;
+}
+.rec4 a {
+  position: absolute;
+  padding-right: 5px;
+  display:block;
+  margin: 0 ;
+  justify-content: flex-end;
+  align-self: flex-end;
+  font-family: "pt-sans",sans-serif;
+  font-weight: 700;
+  color: #FEFEFE;
+  font-size: small;
+}
+/************************************************* navbar *********************************************************/
 
 .navbar-logo{
     height: 56;
@@ -124,9 +261,11 @@ button{
     align-items:flex-start;
   }
 
+/************************************************* Polices *********************************************************/
+
   .pt-sans-regular {
     font-family: "PT Sans", sans-serif;
-    font-weight: 400;
+    font-weight: 200;
     font-style: normal;
   }
   
@@ -148,3 +287,9 @@ button{
     font-style: italic;
   }
   
+  @media (max-width=1000px){
+    .article{
+      width:400px;
+    }
+  
+  }
