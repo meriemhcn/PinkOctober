@@ -17,7 +17,28 @@ body {
 .search-container {
     display: flex;
 }
-
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px; 
+    width: 30px; 
+    background-color: #FFD5D6; 
+    margin-right: 40px; 
+    color: white; 
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-right: solid  white;
+    margin-left: -22%;
+    height: 530px;
+    margin-top: 7%;
+}
+.twoicons{
+    margin-top:300px ;
+}
+.icons{
+    margin-bottom: 10px;
+}
 .search-box {
     position: relative;
     width: 820px; 
@@ -54,10 +75,10 @@ body {
 .logo{
     position:absolute;
     transform: translateY(95%);
-    top:0%;
+    top:-60px;
     left: 10px;
-    width: 20px;
-    height: 20px;
+    width: 301px;
+    height:56 px;
 }
 
 .search-button {
@@ -203,24 +224,52 @@ body {
 
 .message{
     transform:translate(-1500%,50%);
+    position: absolute;
+    left: 10px;
+    width: 20px;
+    height: 20px;
 }
 .parametre{
     transform:translate(-1500%,50%);
+    position: absolute;
+    left: 10px;
+    width: 20px;
+    height: 20px;
 }
 .dictionaire{
     transform:translate(-1500%,50%);
+    position: absolute;
+    left: 10px;
+    width: 20px;
+    height: 20px;
 }
 .file{
     transform:translate(-1500%,50%);
+    position: absolute;
+    left: 10px;
+    width: 20px;
+    height: 20px;
 }
 .profil{
-    transform:translate(-1500%,50%);  
+    transform:translate(-1500%,50%); 
+    position: absolute;
+    left: 10px;
+    width: 20px;
+    height: 20px; 
 }
 .home-icon{
     transform:translate(-1500%,50%);
+    position: absolute;
+    left: 10px;
+    width: 20px;
+    height: 20px;
 }
 .mail{
     transform:translate(-1500%,50%);
+    position: absolute;
+    left: 10px;
+    width: 20px;
+    height: 20px;
 }
 .search-button:hover {
     background-color: #e36f73;

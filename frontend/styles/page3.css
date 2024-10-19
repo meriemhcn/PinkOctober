@@ -57,9 +57,11 @@ body {
     
     
 }
+
 .label-container{
     width:fit-content;
     margin-left:auto;
+    
    
     
    
@@ -81,6 +83,7 @@ body {
     width: 100%;
     margin-top: 30px;
     line-height: 50px;
+    text-decoration: none;
     
     
 }
@@ -89,8 +92,37 @@ body {
 }
 .profileimg{
     display: block;
-    margin-left: 45%;
+    margin-left: 130%;
    
     
+}
+.profile-content {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2px;
+    margin-top: 10px;
+    margin-left: 100%;
+    margin-bottom: 100px;
+   
+}
+.profile-field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFF7F8;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.profile-field input, 
+.profile-field textarea {
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 80%;
+    font-size: 16px;
+    color: #FF7072;
 }
 
