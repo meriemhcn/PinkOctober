@@ -29,9 +29,9 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     border-right: solid  white;
-    margin-left: -22%;
-    height: 530px;
-    margin-top: 7%;
+    margin-left: -39%;
+    height: 560px;
+    margin-top: 12%;
 }
 .twoicons{
     margin-top:300px ;
@@ -41,10 +41,10 @@ body {
 }
 .search-box {
     position: relative;
-    width: 820px; 
-    transform: translateY(95%);
-    left: 40px;
-    height: 69px;
+    width: 800px; 
+    transform: translateY(150%);
+    left: -10%;
+    height: 69%;
 }
 
 .search-box input[type="text"] {
@@ -66,7 +66,7 @@ body {
 
 .icon {
     position: absolute;
-    top: 50%;
+    top: 65%;
     transform: translateY(-100%);
     left: 10px;
     width: 20px;
@@ -82,29 +82,30 @@ body {
 }
 
 .search-button {
+    display:flex;
     background-color: #FF8787;
     border: none;
     position:relative;
-    transform: translateY(100%);
-    left: 150px;
-    width: 239px;
-    height: 55px;
-    top:35%;
-    border-radius: 20px;
-
+    transform: translateY(189%);
+    left: 10%;
+    width:-50%;
+    height: -20%;
+    top:0%;
+    padding-bottom: 15%;
     color: white;
-    padding: 1px 28px; 
+    padding: 20% 95%; 
     text-align:center;
     text-decoration: none;
-    display:block;
-    font-size: 15px;
+    font-size:small;
     border-radius: 10px;
     cursor: pointer;
     transition: background-color .3s ease-in-out;
+    box-shadow: 0 0 10px rgba(255, 146, 148, 0.8);
+    animation: glowing 1.5s infinite alternate;
 }
 .Rectangle1{
     position :absolute;
-    left :30%;
+    margin-left: 5%;
     top :35%;
     transform:translate(-50%,-50%);
     width: 503px;
@@ -122,7 +123,7 @@ body {
 
 .Rectangle2{
     position :absolute;
-    left :35%;
+    left: 35%;
     top :35%;
     transform:translate(40%,-50%);
     width: 503px;
@@ -142,7 +143,7 @@ body {
 }
 .Rectangle3{
     position :absolute;
-    left :30%;
+    margin-left: 5%;
     top :35%;
     transform:translate(-50%,60%);
     width: 503px;
@@ -178,7 +179,7 @@ body {
     }
 .Rectangle5{
     position :absolute;
-    left :30%;
+    margin-left: 5%;
     top :35%;
     transform:translate(-50%,170%);
     width: 503px;
@@ -216,8 +217,8 @@ body {
     top:22%;
     right :2%;
     width: 200px;
-    height: 580px;
-    background: #FFE6E6;
+    height: 605px;
+    background: #F5E7E8;
     border-radius: 10px;
 }
 
