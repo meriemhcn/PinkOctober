@@ -52,25 +52,29 @@ if(!isValid){
     
 }
 const token=jwt.genertatoken(user._id);
-res.json({token});
+res.json({token:token,
+  userId:user._id
+
+});
 
 
 });
 
 router.post("/create/post",async function(req,res){
 
-const posterid=req.body.posterid;
+const pseudo=req.body.pseudo;
 const message=req.body.message;
 
 
-    if(!posterid || !message){
+    if(!pseudo || !message){
         res.status(401).json("Invalid body !! ");
         return;
     }
 
     try{
  
-        const user = await userModel.findOne({ _id: posterid});
+        const user = await userModel.findOne({ pseudo: pseudo});
+        const posterid=user._id;
         if(!user){res.status(401).json("user not found");
             return;
         }
@@ -271,6 +275,39 @@ router.put("/desabonner/:pseudo", async function(req, res) {
     }
 } );
 
+router.get('/get/post',async function(req, res) {
+  try {
+   
+    const posts = await PostModel.find({}) 
+      .sort({ createdAt: -1 });  
+   
+    if (posts.length === 0) {
+      return res.status(404).json({ message: "Aucun post trouvé dans la base de données" });
+    }
+
+   
+    res.status(200).json(posts);
+  } catch (error) {
+    console.error("Erreur lors de la récupération des posts :", error);
+    res.status(500).json({ message: "Erreur serveur lors de la récupération des posts" });
+  }
+});
+router.get("/get/pseudo/:id",async function(req, res) {
+  try {
+   const userid=req.params.id;
+   const user = await userModel.findById(userid);
+   
+    if (user.length === 0) {
+      return res.status(404).json({ message:"user not found"});
+    }
+
+   
+    res.status(200).json({pseudo:user.pseudo});
+  } catch (error) {
+    console.error("Erreur lors de la récupération du usor :", error);
+    res.status(500).json({ message: "Erreur serveur lors de la récupération du user" });
+  }
+});
 router.put('/like-post1/:id', async (req, res) => {
 
     if (!req.body.userId)

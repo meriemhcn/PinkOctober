@@ -27,6 +27,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
            
             const result = await response.json();
+            localStorage.setItem('userPseudo', pseudo);
+            localStorage.setItem('userId', data.userId);
             alert(result); 
 
         } catch (error) {
@@ -56,6 +58,9 @@ document.getElementById('loginform').addEventListener('submit', async function(e
         if (data.token) {
             localStorage.setItem('token', data.token);
             localStorage.setItem('userPseudo', pseudo);
+            localStorage.setItem('userId', data._id); 
+            console.log(data._id);
+        
             alert('Login successful!');
             
             
