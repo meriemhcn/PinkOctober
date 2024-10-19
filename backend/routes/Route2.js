@@ -206,10 +206,10 @@ router.put("/desabonner/:pseudo", async function(req, res) {
         { new: true, runValidators: true }
       );
   
-      // Mettre à jour l'utilisateur suivi en ajoutant l'ID de l'utilisateur connecté à ses followers
+      
       await userModel.findByIdAndUpdate(
         utilisateurAAbonner._id,
-        { $addToSet: { followers: utilisateurConnecte._id } }
+        { $addToSet: { followers: utilisateurConnecte.pseudo} }
       );
   
       res.status(200).json({
@@ -322,6 +322,22 @@ router.get("/get/pseudo/:id",async function(req, res) {
     res.status(200).json({pseudo:user.pseudo});
   } catch (error) {
     console.error("Erreur lors de la récupération du usor :", error);
+    res.status(500).json({ message: "Erreur serveur lors de la récupération du user" });
+  }
+});
+router.get("/get/user/:pseudo",async function(req, res) {
+  try {
+   const userid=req.params.pseudo;
+   const  utilisateurConnecte= await userModel.findOne({pseudo:userid});
+   
+    if (utilisateurConnecte.length === 0) {
+      return res.status(404).json({ message:"user not found"});
+    }
+
+   
+    res.status(200).json(utilisateurConnecte);
+  } catch (error) {
+    console.error("Erreur lors de la récupération du user :", error);
     res.status(500).json({ message: "Erreur serveur lors de la récupération du user" });
   }
 });

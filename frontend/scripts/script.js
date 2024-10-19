@@ -25,11 +25,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 body: JSON.stringify(data), 
             });
 
-           
-            const result = await response.json();
-            localStorage.setItem('userPseudo', pseudo);
-            localStorage.setItem('userId', data.userId);
-            alert(result); 
+            const responseData = await response.json();
+
+            if (response.ok) {
+                localStorage.setItem('userPseudo', data.pseudo);
+                localStorage.setItem('userId', responseData.userId);
+                window.location.href = '../HTML/page3.html';
+            }
 
         } catch (error) {
             console.error("Error:", error);
@@ -64,7 +66,7 @@ document.getElementById('loginform').addEventListener('submit', async function(e
             alert('Login successful!');
             
             
-            window.location.href = '../HTML/forom.html';
+            window.location.href = '../HTML/page3.html';
     
             
           } else {

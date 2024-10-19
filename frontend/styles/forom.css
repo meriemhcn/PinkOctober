@@ -89,8 +89,7 @@ body {
 .twoicons{
     margin-top:180px ;
 }
-<<<<<<< HEAD
-=======
+
 .profileimg{
     display: block;
     margin-left: 45%;
@@ -128,7 +127,7 @@ Chat Interface CSS
     flex-direction: column;
     gap: 25px;
 }
->>>>>>> 8a0eafc3f7febb220e07f3cc65a3d3960af616b0
+
 
 .comment-section {
     position:fixed;

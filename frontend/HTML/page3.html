@@ -11,7 +11,7 @@
 <body>
     <header>
         
-            <a href="index.html" class="navbar-logo"><img id="logo" src="../images/logo2.png"></a>
+            <a href="index.html" class="navbar-logo"><img id="logo" src="../images/Group 78.png"></a>
        
     </header>
     <div class="bigcontainer">
@@ -27,6 +27,21 @@
            
         </div>
         <div class="content-container"> 
+           
+                
+            <div class="search-list">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Rechercher un utilisateur...">
+                </div>
+                <div id="loadingSpinner" class="loading-spinner">
+                    <i class="fas fa-spinner fa-spin"></i> Chargement...
+                </div>
+                <div id="errorMessage" class="error-message"></div>
+                <div id="userList" class="user-list">
+                    <!-- Les utilisateurs seront injectÃ©s ici dynamiquement -->
+                </div>
+            </div>
             <div>
             <img class="profileimg" src="../images/profileicon.png" alt=""height="116px" width="116">
             <div class="profile-content">
@@ -74,11 +89,18 @@
                 
                 
             </div>
-         
+
+        </div>
+        <div id="followDialog" class="follow-overlay">
+            <div class="follow-content">
+                <h3 id="followTitle"></h3>
+                <div class="follow-list"></div>
+                <button id="closeFollowBtn">Close</button>
+            </div>
         </div>
     </div>
     
     
-    <script src="../scripts/script.js"></script>
+    <script src="../scripts/page3.js"></script>
 </body>
 </html>
