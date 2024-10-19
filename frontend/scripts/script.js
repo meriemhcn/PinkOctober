@@ -1,5 +1,6 @@
+/*
 document.addEventListener("DOMContentLoaded", function () {
-    const signupForm = document.querySelector("form"); 
+    const signupForm = document.getElementById("loginform"); 
 
     signupForm.addEventListener("submit", async function (event) {
         event.preventDefault(); 
@@ -33,16 +34,16 @@ document.addEventListener("DOMContentLoaded", function () {
             alert("An error occurred while signing up.");
         }
     });
-});
+});*/
 
-document.getElementById('login-form').addEventListener('submit', async function(e) {
+document.getElementById('loginform').addEventListener('submit', async function(e) {
     e.preventDefault(); 
 
-    const pseudo = document.getElementById('pseudo').value;
+    const pseudo = document.getElementById('username').value;
     const password = document.getElementById('password').value;
 
     try {
-        const response = await fetch('/login', {
+        const response = await fetch('http://localhost:5000/user/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -51,17 +52,21 @@ document.getElementById('login-form').addEventListener('submit', async function(
         });
 
         const data = await response.json();
-
-        if (response.ok) {
-           
-            alert("Login successful! Token: " + data.token);
-        } else {
+        
+        if (data.token) {
+            localStorage.setItem('token', data.token);
+            alert('Login successful!');
             
-            alert("Error: " + data.message);
+            
+            window.location.href = '../HTML/new.html';
+    
+            
+          } else {
+            alert(data.message || 'Login failed');
+          }
+        } catch (error) {
+          console.error('Error:', error);
+          alert('An error occurred during login.');
         }
-    } catch (error) {
-        console.error('Error during login:', error);
-        alert("An error occurred. Please try again.");
-    }
-});
+      });
 

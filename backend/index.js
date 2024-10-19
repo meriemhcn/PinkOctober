@@ -11,15 +11,15 @@ dotenv.config();
 
 
 app.use(express.json());//middleware
-const corsOptions = {
+/*const corsOptions = {
     origin: process.env.CLIENT_URL,
     credentials: true,
     'allowedHeaders': ['sessionId', 'Content-Type'],
     'exposedHeaders': ['sessionId'],
     'methods': 'GET,HEAD,PUT,PATCH,POST,DELETE',
     'preflightContinue': false
-  }
-  app.use(cors(corsOptions));
+  }*/
+  app.use(cors());
 app.use(cookieParser());
 
 app.use("/user",require("./routes/Route2.js"));

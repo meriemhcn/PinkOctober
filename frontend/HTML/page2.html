@@ -13,7 +13,7 @@
         
         <h1>Log in</h1>
 
-        <form action="/login" method="post">   
+        <form id="loginform" action="/login" method="post">   
         
         <div class="input-box">
             <label for="username">username</label><br>
@@ -32,7 +32,7 @@
             <label class="login-label"> <a href="#" class="password-retrieve"> Forgot password?</a>Please try again or request a new one.</label>
             
         </div>
-        <button type="submit" class="btn"> Log in</button>
+        <button type="submit" class="btn" id="submitlogin"> Log in</button>
         <div class="sign-up-link"> 
             <label class="login-label"> New user?<a href="page1.html" class="sign-up-link"> Sign up.</a></label>
             
@@ -44,7 +44,8 @@
     <div class="pic"> 
         <img src="../images/singlewoman.png" alt="woman image" width="298px" height="379px">
     </div>
-    <script src="../scripts/passwordtoggle.js"> </script>
+    
     <script src="../scripts/script.js"></script>
+    <script src="../scripts/passwordtoggle.js"> </script>
 </body>
 </html>
