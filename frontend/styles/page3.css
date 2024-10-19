@@ -77,6 +77,9 @@ body {
 .icons{
     margin-bottom: 10px;
 }
+.icons:hover {
+    transform: scale(1.1);
+}
 
 .sidelabel{
     
@@ -89,6 +92,9 @@ body {
 }
 .twoicons{
     margin-top:180px ;
+}
+.twoicons:hover {
+    transform: scale(1.1);
 }
 .profileimg{
     display: block;

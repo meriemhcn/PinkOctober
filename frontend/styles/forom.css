@@ -74,6 +74,7 @@ body {
 }
 .icons{
     margin-bottom: 10px;
+    ;
 }
 
 .sidelabel{
@@ -88,6 +89,46 @@ body {
 .twoicons{
     margin-top:180px ;
 }
+<<<<<<< HEAD
+=======
+.profileimg{
+    display: block;
+    margin-left: 45%;
+   
+    
+}
+
+.navbar-logo{
+    margin-top:1.8%;
+    margin-left:2.5%;
+}
+Chat Interface CSS
+
+.bigcontainer {
+    display: flex;
+    min-height: 100vh;
+    background-color: #ffecef;
+}
+
+
+
+.icons {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.icons:hover {
+    transform: scale(1.1);
+}
+
+
+.twoicons {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+>>>>>>> 8a0eafc3f7febb220e07f3cc65a3d3960af616b0
 
 .comment-section {
     position:fixed;
