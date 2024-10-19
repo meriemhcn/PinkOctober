@@ -3,26 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PinkCells</title>
+    <title>news</title>
     <link rel="stylesheet" href="../styles/news.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
-
 <body>
-  <div class="container">
-    <img class="logo" src="../images/Group 78.png">
+    <header>
+        
+            <a href="index.html" class="navbar-logo"><img id="logo" src="../images/Group 78.png"></a>
+       
+    </header>
+    <div class="bigcontainer">
+        <div class="menu-bar"> 
+            <a href="../HTML/index4.html"> <img class="icons" src="../images/home-icon.png" alt="" width="29" height="29"> </a>
+            <a href="../HTML/page3.html"><img class="icons"src="../images/profil-icon.png" alt="" width="29" height="29"></a>
+           <a href=""><img class="icons"src="../images/file-icon.png" alt="" width="29" height="29"></a> 
+            <a href=""><img class="icons"src="../images/dic-icon.png" alt="" width="29" height="29"></a>
+            <div  class="twoicons">
+                <a href=""><img src="../images/message-icon.png" alt="" width="29" height="29"></a>
+               <a href=""> <img src="../images/setting-icon.png" alt="" width="29" height="29"></a>
+            </div>
+           
+        </div>
+        <span class="user-pseudo">@<span id="currentUser"></span></span>
+        <div class="comment-section">
+            <textarea class="textarea" placeholder="Write your message ..." class="comment-box"></textarea>
+            <button type="submit" class="send-button">Send</button>
+        </div>
+        <div class="posts-container"></div>
+    </div>
+</div>
+         
+        </div>
+    </div>
     
-    <div class="icon-bar">
-        <img src="../images/home-icon.png" alt="Home Icon">
-        <img src="../images/profil-icon.png" alt="User Icon">
-        <img  src="../images/cmt-icon.png" alt="cmt Icon">
-        <img src="../images/file-icon.png" alt="news Icon">
-        <img src="../images/dic-icon.png" alt="Dicto Icon">
-        <img src="../images/message-icon.png" class="messsage" alt="Message Icon">
-        <img src="../images/setting-icon.png" class="setting" alt="setting Icon">
-      
-      </div>
-      
     
-  </div> 
+    <script src="../scripts/news.js"></script>
 </body>
 </html>

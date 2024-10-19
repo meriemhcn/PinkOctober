@@ -82,7 +82,7 @@ button:hover{
     width: 100%;
     gap: 30px;
 }
-/************************************************* Features *********************************************************/
+/************************************************* About us *********************************************************/
 .sec1{
   height: 100vh;
   display:flex;
@@ -126,9 +126,10 @@ button:hover{
   height: 180px;
   margin:0 auto;
   border-radius: 25px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 
 }
-/********************************************* About Us ********************************************************/
+/********************************************* Features ********************************************************/
 .sec2{
   margin:0;
   padding: 0;
@@ -165,7 +166,7 @@ button:hover{
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  row-gap:40px;
+  row-gap:30px;
 
 }
 .rec4 > div{
@@ -179,6 +180,7 @@ button:hover{
   font-size: 18px;
   font-weight: bold;
   border-radius: 40px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 .test,.glossary,.forum,.articles {
   padding: 10px;
@@ -216,23 +218,30 @@ button:hover{
   color: #FEFEFE;
   font-size: small;
 }
-/************************************************* Contact Us *****************************************************/
-.div3{
-  display:block;
-  align-items: center;
+.div{
+  display: block;
+  justify-content: space-between;
+
 }
+/************************************************* Contact Us *****************************************************/
+
 .cercle{
   display:flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  row-gap:40px;
+  margin-top: 15%;
+  gap:40px;
 }
 .c{
-  width: 50px;
-  height: 50px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 190px;
+  height: 190px;
   border-radius: 50%;
   background-color: #FF9294;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 .sec3{
   margin:0;
@@ -244,7 +253,41 @@ button:hover{
   flex-direction: column;
 }
 .div3 p{
+  color:#FEFEFE;
   text-align: center;
+  font-family: "pappins",sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  margin-top: 10%;
+}
+/*************************************************footer ***********************************************************/
+.pied-p{
+  display:flex;
+  justify-content: space-around;  
+  align-items: self-start;
+}
+.pied-p a{
+  color:#FFFFFF;
+  text-decoration: none;
+  font-family: "poppins",sans-serif;
+  font-weight: 700;
+}
+.pied-p li{
+  list-style: none;
+}
+.pied-p li a {
+  color: #FD5E61;
+}
+
+hr{
+  height: 3px;
+  width: 100%;
+  background-color: #FFFFFF;
+  border: none; 
+}
+#ref{
+  color:#FD5E61;
+
 }
 /************************************************* navbar *********************************************************/
 

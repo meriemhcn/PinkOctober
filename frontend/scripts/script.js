@@ -25,9 +25,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 body: JSON.stringify(data), 
             });
 
-           
-            const result = await response.json();
-            alert(result); 
+            const responseData = await response.json();
+
+            if (response.ok) {
+                localStorage.setItem('userPseudo', data.pseudo);
+                localStorage.setItem('userId', responseData.userId);
+                window.location.href = '../HTML/page3.html';
+            }
 
         } catch (error) {
             console.error("Error:", error);
@@ -55,10 +59,14 @@ document.getElementById('loginform').addEventListener('submit', async function(e
         
         if (data.token) {
             localStorage.setItem('token', data.token);
+            localStorage.setItem('userPseudo', pseudo);
+            localStorage.setItem('userId', data._id); 
+            console.log(data._id);
+        
             alert('Login successful!');
             
             
-            window.location.href = '../HTML/new.html';
+            window.location.href = '../HTML/page3.html';
     
             
           } else {
