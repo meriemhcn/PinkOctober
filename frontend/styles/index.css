@@ -95,7 +95,7 @@ button:hover{
   color:#FEFEFE;
 }
 #p1{
-  font-family: "popping",bold;
+  font-family: "poppins",bold;
   font-weight: 700;
   font-size: 50px;
   margin-top:30px;
@@ -147,7 +147,7 @@ button:hover{
 }
 #p21{
   padding: 0;
-  font-family: "popping",bold;
+  font-family: "poppins",bold;
   font-weight: 700;
   font-size: 50px;
   margin:0px;
@@ -361,9 +361,26 @@ hr{
     font-style: italic;
   }
   
-  @media (max-width=1000px){
-    .article{
-      width:400px;
+  @media (max-width: 1000px) {
+    body {
+      width: 100%;
     }
-  
+    .bloc2{
+      width: 60%;
+      height: 80%;
+    }
+    .bloc1, .bloc2 {
+      margin: 0;
+      padding: 10px;
+    }
+    h1 {
+      font-size: 32px;
+    }
+    .rectangle{
+      width: 90%;
+    }
+    .rec4 > div {
+      width: 90%;
+    }
   }
+  
