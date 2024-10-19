@@ -1,6 +1,6 @@
-/*
+
 document.addEventListener("DOMContentLoaded", function () {
-    const signupForm = document.getElementById("loginform"); 
+    const signupForm = document.getElementById("signup"); 
 
     signupForm.addEventListener("submit", async function (event) {
         event.preventDefault(); 
@@ -8,16 +8,16 @@ document.addEventListener("DOMContentLoaded", function () {
         
         const formData = new FormData(signupForm);
         const data = {
-            pseudo: formData.get("pseudo"),
+            pseudo: formData.get("username"),
             email: formData.get("email"),
             password: formData.get("password"),
-            firstname: formData.get("firstname"),
             lastname: formData.get("lastname"),
+            firstname: formData.get("firstname"),
         };
 
         try {
            
-            const response = await fetch("/signup", {
+            const response = await fetch("http://localhost:5000/user/signup",{
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
             alert("An error occurred while signing up.");
         }
     });
-});*/
+});
 
 document.getElementById('loginform').addEventListener('submit', async function(e) {
     e.preventDefault(); 
