@@ -90,12 +90,8 @@ body {
     
     
 }
-.twoicons{
-    margin-top:180px ;
-}
-.twoicons:hover {
-    transform: scale(1.1);
-}
+
+
 .profileimg{
     display: block;
     margin-left: 130%;

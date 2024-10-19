@@ -86,9 +86,7 @@ body {
     
     
 }
-.twoicons{
-    margin-top:180px ;
-}
+
 
 .profileimg{
     display: block;
@@ -119,6 +117,7 @@ Chat Interface CSS
 .icons:hover {
     transform: scale(1.1);
 }
+
 
 
 .twoicons {
