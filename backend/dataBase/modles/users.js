@@ -23,7 +23,7 @@ const UserSchema= new mongoose.Schema(
             required:true,
             trim:true,
           },
-          latName:{
+          lastName:{
             type:String,
             required:true,
             trim:true,
@@ -33,7 +33,7 @@ const UserSchema= new mongoose.Schema(
          },
          picture: {
             type: String,
-            default: "./uploads/profil/random-user.png"         // A ne pas oubliez mettre apré 
+            default: "./uploads/profil/random-user.png"         // ReMinder a moi meme phot unique 
           },
           bio :{
             type: String,

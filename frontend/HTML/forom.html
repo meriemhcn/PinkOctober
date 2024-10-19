@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forom</title>
+    <link rel="stylesheet" href="../styles/forom.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        
+            <a href="index.html" class="navbar-logo"><img src="../images/Group 78.png"></a>
+       
+    </header>
+    <div class="bigcontainer">
+        <div class="menu-bar"> 
+            <img class="icons" src="../images/home-icon.png"alt="" width="29" height="29">
+            <img class="icons"src="../images/profil-icon.png" alt="" width="29" height="29">
+            <img class="icons"src="../images/file-icon.png" alt="" width="29" height="29">
+            <img class="icons"src="../images/dic-icon.png" alt="" width="29" height="29">
+            <div  class="twoicons">
+                <img src="../images/message-icon.png" alt="" width="29" height="29">
+                <img src="../images/setting-icon.png" alt="" width="29" height="29">
+            </div>           
+        </div>
+        <span class="user-pseudo">@<span id="currentUser"></span></span>
+        <div class="comment-section">
+            <textarea class="textarea" placeholder="Write your message ..." class="comment-box"></textarea>
+            <button type="submit" class="send-button">Send</button>
+        </div>
+        <div class="posts-container"></div>
+    </div>
+    
+    
+    <script src="../scripts/forom.js"></script>
+</body>
+</html>

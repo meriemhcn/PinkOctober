@@ -6,16 +6,23 @@
     <title>Sign up</title>
     <link rel="stylesheet" href="..styles/page2.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
+   
+
     <div class="wrapper"> 
         
         <h1>Create an account</h1>
 
-        <form action="">   
+        <form action="/signup" id="signup" method="post">   
         <div class="input-box">
-            <label for="name">name</label><br>
-            <input type="name" name="name" id="name" placeholder="enter your name...">
+            <label for="name">first name</label><br>
+            <input type="firstname" name="firstname" id="firstname" placeholder="enter your firstname...">
+        </div>
+        <div class="input-box">
+            <label for="name">last name</label><br>
+            <input type="lastname" name="lastname" id="lastname" placeholder="enter your name...">
         </div>
         <div class="input-box">
             <label for="username">username</label><br>
@@ -27,19 +34,25 @@
         </div>
         <div class="input-box">
             <label for="password">password</label><br>
-            <i></i>
             <input type="password" name="password" id="password" placeholder="enter your password...">
+            <i class="fa-solid fa-eye" id="show-password"></i>
            
             
         </div>
         <button type="submit" class="btn"> Sign up</button>
         <div class="login-link"> 
-            <label class="login-label"> Already have an account?<a href="#" class="sign-in-link"> Sign in.</a></label>
+            <label class="login-label"> Already have an account?<a href="page2.html" class="sign-in-link"> Sign in.</a></label>
             
         </div>
+       
         
         
     </form>
     </div>
+    <div class="pic"> 
+        <img src="../images/singlewoman.png" alt="woman image" width="298px" height="379px">
+    </div>
+    <script src="../scripts/passwordtoggle.js"> </script>
+    <script src="../scripts/script.js"></script>
 </body>
 </html>
