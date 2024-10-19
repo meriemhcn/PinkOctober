@@ -225,6 +225,8 @@ button:hover{
   display:flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
+  row-gap:40px;
 }
 .c{
   width: 50px;
@@ -232,12 +234,24 @@ button:hover{
   border-radius: 50%;
   background-color: #FF9294;
 }
+.sec3{
+  margin:0;
+  padding: 0;
+  height: 100vh;
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.div3 p{
+  text-align: center;
+}
 /************************************************* navbar *********************************************************/
 
 .navbar-logo{
-    height: 56;
+    height: 56px;
     position:absolute;
-    width: 301.83;
+    width: 301px;
     margin: 0;
     margin-top: 4px;;
     margin-left: 175px;
