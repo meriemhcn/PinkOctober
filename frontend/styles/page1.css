@@ -33,7 +33,7 @@ h1{
     padding: 20px;
     transition: transform 0.2s;
     width: 400px;
-    height: 400px;
+    height: 480px;
     text-align: center;
     align-items: flex-end;
     
@@ -109,7 +109,7 @@ font-size: x-small;
 }
 .fa-eye{
     position:absolute;
-    top: 68%;
+    top: 70%;
     right: 8%;
     cursor: pointer;
     color: white;
