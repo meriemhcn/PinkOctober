@@ -63,7 +63,7 @@ document.getElementById('loginform').addEventListener('submit', async function(e
             localStorage.setItem('userId', data._id); 
             console.log(data._id);
         
-            alert('Login successful!');
+           // alert('Login successful!');
             
             
             window.location.href = '../HTML/page3.html';
