@@ -61,6 +61,7 @@ body {
 .label-container{
     width:fit-content;
     margin-left:auto;
+    
    
     
    
@@ -82,6 +83,7 @@ body {
     width: 100%;
     margin-top: 30px;
     line-height: 50px;
+    text-decoration: none;
     
     
 }
