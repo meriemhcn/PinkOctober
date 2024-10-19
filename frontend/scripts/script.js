@@ -55,10 +55,11 @@ document.getElementById('loginform').addEventListener('submit', async function(e
         
         if (data.token) {
             localStorage.setItem('token', data.token);
+            localStorage.setItem('userPseudo', pseudo);
             alert('Login successful!');
             
             
-            window.location.href = '../HTML/new.html';
+            window.location.href = '../HTML/forom.html';
     
             
           } else {
