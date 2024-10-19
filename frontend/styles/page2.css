@@ -65,8 +65,8 @@ input {
     background: #FF9294;
     color: white;
     width:130px;
-    margin-top: 2px;
-    margin-bottom: 2px;
+    margin-top: 30px;
+    margin-bottom: 5px;
     padding: 10px;
     border: 1px solid white;
     border-radius: 10px;
@@ -93,9 +93,7 @@ font-size: x-small;
 .sign-up-link{
     color: #A15C92;
 }
-.password-retrieve{
-    color: #A15C92;
-}
+
 .wrapper:hover{
     transform: translateY(-10px);
     box-shadow: 0 0 30px rgba(255, 111, 114, 0.8);
