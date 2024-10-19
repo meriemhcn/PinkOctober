@@ -3,32 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
-    <link rel="stylesheet" href="../styles/page3.css">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="../styles/test.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        
-            <a href="index.html" class="navbar-logo"><img id="logo" src="../images/logo2.png"></a>
-       
-    </header>
-    <div class="bigcontainer">
-        <div class="menu-bar"> 
-            <img class="icons" src="../images/home-icon.png" alt="" width="29" height="29">
-            <img class="icons"src="../images/profil-icon.png" alt="" width="29" height="29">
-            <img class="icons"src="../images/file-icon.png" alt="" width="29" height="29">
-            <img class="icons"src="../images/dic-icon.png" alt="" width="29" height="29">
-            <div  class="twoicons">
-                <img src="../images/message-icon.png" alt="" width="29" height="29">
-                <img src="../images/setting-icon.png" alt="" width="29" height="29">
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+                <span>PinkCells</span>
             </div>
-           
-        </div>
-        <div class="content-container"> 
-            <div>
-            <img class="profileimg" src="../images/profileicon.png" alt=""height="116px" width="116">
+            <nav class="menu">
+                <img src="home-icon.png" alt="Home Icon">
+                <img src="profile-icon.png" alt="Profile Icon">
+                <img src="messages-icon.png" alt="Messages Icon">
+                <img src="files-icon.png" alt="Files Icon">
+                <img src="search-icon.png" alt="Search Icon">
+                <img src="settings-icon.png" alt="Settings Icon">
+            </nav>
+        </aside>
+        <main class="profile-section">
+            <div class="profile-header">
+                <img src="profile-pic.png" alt="Profile Picture" class="profile-pic">
+            </div>
             <div class="profile-content">
                 <div class="profile-field">
                     <label>Name</label>
@@ -58,24 +57,7 @@
                     <span class="edit-icon"><i class="fas fa-pencil-alt"></i></span>
                 </div>
             </div>
-            </div>
-            <div class="label-container">
-                <div class=""profile>
-                    <img class="labelimg" src="../images/profileicon.png" alt="" width="17px" height="18px">
-
-                <label class="sidelabel" for="profile">profile</label>
-                </div>
-                <div class="password">
-                    <img class="labelimg" src="../images/passwordicon.png" alt="" width="17px" height="18px">
-                <label class="sidelabel" for="password">password</label>
-                </div>
-                
-            </div>
-         
-        </div>
+        </main>
     </div>
-    
-    
-    <script src="../scripts/script.js"></script>
 </body>
 </html>
